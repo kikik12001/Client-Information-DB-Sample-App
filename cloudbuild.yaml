@@ -33,12 +33,7 @@ steps:
 
   # Step 3: Deploy to Google App Engine
   - name: 'gcr.io/cloud-builders/gcloud'
-    entrypoint: 'bash'
-    secretEnv: ['DATABASE_URL']
-    args:
-      - '-c'
-      - |
-        gcloud app deploy --quiet --promote --stop-previous-version --set-env-vars DATABASE_URL=$$DATABASE_URL
+    args: ['app', 'deploy', '--quiet', '--promote', '--stop-previous-version']
 
 
 availableSecrets:
