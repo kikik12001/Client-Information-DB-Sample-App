@@ -6,4 +6,4 @@ automatic_scaling:
   target_throughput_utilization: 0.75
   max_instances: 2
 env_variables:
-  NODE_ENV: production
+  NODE_ENV: development
