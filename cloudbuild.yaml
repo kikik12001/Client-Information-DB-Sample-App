@@ -16,7 +16,7 @@ steps:
         chmod +x cloud-sql-proxy
 
         echo "Starting Cloud SQL Proxy..."
-        ./cloud-sql-proxy ip-info-db-478821:europe-west2:my-postgres-instance --port 5432 &
+        ./cloud-sql-proxy mydeployproject-481214:europe-west2:clientinfo-db --port 5432 &
         PROXY_PID=$$!
 
         echo "Waiting for proxy to start..."
