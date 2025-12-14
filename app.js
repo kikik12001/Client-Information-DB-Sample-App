@@ -241,7 +241,7 @@ async function getSecret(secretName) {
       });
     });
   } catch (error) {
-    console.error('Failed to initialize application:', error.message);
-    process.exit(1);
+    console.error('Failed to initialize application:', error);
+    
   }
 })();

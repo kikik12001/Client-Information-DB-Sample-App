@@ -9,5 +9,5 @@ automatic_scaling:
 
 env_variables:
   NODE_ENV: production
-  DATABASE_URL: "postgres://postgres:Babo18!!@/clientinfo?host=/cloudsql/mydeployproject-481214:europe-west2:clientinfo-db"
+  
 
