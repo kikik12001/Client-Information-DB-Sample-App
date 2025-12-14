@@ -7,3 +7,4 @@ automatic_scaling:
   max_instances: 2
 env_variables:
   NODE_ENV: production
+  DATABASE_URL: ${DATABASE_URL}
