@@ -31,8 +31,17 @@ text
 2. `sequelize db:migrate` - Cloud SQL Proxy + database migrations
 3. `gcloud app deploy` - Deploy new version live
 
+## Deployment Instructions
+1. Push your latest code to the `main` branch:
+   - `git add .`
+   - `git commit -m "update"`
+   - `git push origin main`
+2. Cloud Build trigger starts automatically in GCP.
+3. Cloud Build runs install → migrate → deploy.
+4. The updated version is available at the App Engine URL above.
+
 ## Cost Estimate
 £59.45/month (Google Cloud Pricing Calculator)
 - Cloud SQL: £59.20 (main cost)
-- App Engine: £0.20 
-- Others: Free tier
+- Cloud Build: ~£0.26
+- App Engine + Secret Manager: free/very low at this scale
